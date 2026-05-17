@@ -382,9 +382,26 @@ html[data-loan-theme="dark"] .disclaimer strong { background: linear-gradient(18
   .reveal, .reveal.in { opacity: 1; transform: none; transition: none; }
 }
 .gradient-title { background: linear-gradient(135deg, var(--primary) 0%, #6E5BFF 55%, #FF5BB3 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: transparent; }
+
+/* Site nav */
+.site-nav { background: var(--bg); border-bottom: 1px solid var(--border-soft); padding: 12px 0; }
+.site-nav .container { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+.site-nav a { color: var(--text-soft); font-size: 14px; font-weight: 600; text-decoration: none; padding: 6px 12px; border-radius: 8px; transition: all 0.15s; }
+.site-nav a:hover { background: var(--primary-soft); color: var(--primary); }
+.site-nav a.active { background: var(--primary-light); color: var(--primary-dark); }
+.site-nav .brand { font-weight: 800; color: var(--text-strong); margin-right: auto; font-size: 15px; }
 </style>
 </head>
 <body>
+
+<!-- 사이트 네비게이션 -->
+<nav class="site-nav">
+<div class="container">
+<span class="brand">💗 우리집 혜택 찾기</span>
+<a href="./index.html" class="active">🏠 부동산 대출 찾기</a>
+<a href="./baby.html">👶 출산·육아 지원금</a>
+</div>
+</nav>
 
 <!-- 글 읽기 진행률 -->
 <div id="readingProgress" aria-hidden="true"></div>
